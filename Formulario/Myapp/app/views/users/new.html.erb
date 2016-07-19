@@ -1,0 +1,22 @@
+<h1>Registrar Datos Usuario</h1>
+
+<%= form_for @user do |t| %>
+  <p>
+    <%= t.label :name, "Nombre" %><br>
+    <%= t.text_field :name %>
+  </p>
+
+  <p>
+    <%= t.label :phone, "Teléfono" %><br>
+    <%= t.text_field :phone %>
+  </p>
+
+  <p>
+    <%= t.label :email, "E-mail" %><br>
+    <%= t.text_field :email %>
+  </p>
+
+  <p>
+    <%= t.submit "Enviar" %>
+  </p>
+<% end %>
