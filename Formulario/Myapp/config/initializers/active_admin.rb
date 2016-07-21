@@ -7,6 +7,8 @@ ActiveAdmin.setup do |config|
   # for each of the active admin pages.
   #
   config.site_title = "Myapp"
+  require 'activeadmin'
+  require 'activeadmin/cancan_adapter'
 
 
 
